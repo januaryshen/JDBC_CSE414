@@ -1,0 +1,10 @@
+# user_login
+create user_login userpass 1000
+login user_login "SELECT password FROM Users WHERE username = user_login"
+#
+# expected printouts for user_login
+#
+*
+Created user user_login
+Login failed
+*

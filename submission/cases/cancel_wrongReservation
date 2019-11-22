@@ -1,0 +1,20 @@
+# user_cancel
+create user_cancel pass 10000
+login user_cancel pass
+search "Seattle WA" "Boston MA" 1 1 1
+book 0
+reservations
+cancel 0
+#
+# expected printouts for user_cancel
+#
+*
+Created user user_cancel
+Logged in as user_cancel
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Failed to cancel reservation 0
+*

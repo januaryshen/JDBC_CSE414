@@ -1,0 +1,8 @@
+# IamSuperLongUserNameMoreThanVARCHAR(20)
+create IamSuperLongUserNameMoreThanVARCHAR(20) pass 100
+#
+# expected printouts
+#
+*
+Failed to create user
+*
